@@ -79,6 +79,9 @@ Although your friend has an excellent understanding of property prices in her ow
 ## Main Data Analysis and Machine Learning Libraries
 * Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
 
+## Refrences
+https://pythonguides.com/how-to-find-duplicates-in-python-dataframe/
+Checking for duplicated data  
 
 ## Credits 
 
