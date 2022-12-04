@@ -104,3 +104,7 @@ Checking for duplicated data
 ## Acknowledgements (optional)
 * In case you would like to thank the people that provided support through this project.
 
+
+
+# Bugs 
+I had a reoccuring issue where I had made extensive notes in markdown format, analysing the plots following eature engineering. The text and subsequent code kept on disapearing. 
