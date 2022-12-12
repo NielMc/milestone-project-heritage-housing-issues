@@ -12,7 +12,7 @@ def summary_body():
         
     
         f"**Project Dataset**\n"
-        f"* The dataset represents a ****. "
+        f"* The dataset represents a . "
         f"Containing individual customer data on the products and services "
         f"(like internet type, online security, online backup, tech support), "
         f"account information (like contract type, payment method, monthly charges) "
