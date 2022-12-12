@@ -9,7 +9,6 @@ from app_pages.page_predict import prediction_tool
 from app_pages.page_metrics import ml_prediction_metrics
 
 app = MultiPage(app_name= "Heritage Housing")
-# # Add your app pages here using .add_page()
 app.add_page("Project Summary", summary_body)
 app.add_page("Hypothesis and Validation", hypothesis_and_validation)
 app.add_page("Correlation Study of House Prices", study)
