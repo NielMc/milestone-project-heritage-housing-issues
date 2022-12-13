@@ -44,6 +44,14 @@ filtered_df = in_df[['OverallQual', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'Ga
 
 st.write(filtered_df)
 
+st.write("The data pertaining to the inherited house was processed through the prediction application. "
+        "Here are the figures of their estimated value: \n\n "
+            "* $126,449 \n "
+			"* $150,322 \n "
+			"* $170,148 \n "
+			"* $181,897 ")
+
+st.write("---")
 
 
 def DrawInputsWidgets():
