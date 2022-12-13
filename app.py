@@ -13,6 +13,6 @@ app.add_page("Project Summary", summary_body)
 app.add_page("Sale Price Correlation Study", study)
 app.add_page("House Price Prediction", prediction_tool)
 app.add_page("Hypothesis and Validation", hypothesis_and_validation)
-app.add_page("ML Model", ml_predictor)    
+app.add_page("ML Model", ml_predictor)
 
 app.run() # Run the  app

@@ -7,30 +7,32 @@ def summary_body():
     # text based on README file - "Dataset Content" section
     st.info(
         f"**Project Terms & Jargons**\n"
-        f"* A **House** is a building that serves as living quaters for one or more families.\n" 
+        f"* A **House** is a building that serves as living quaters for one or more families.\n"
         f"* The **Sale Price** is the price at which the house will sell and is also the *target variable* for this study.\n"
         
     
         f"**Project Dataset**\n"
-        f"* The dataset represents properties sold in Ames, Iowa.\"
-        f"It contain varying data regarding the same 24 attributes which each property is measured against.\"
-        f"We use this very data to complete our study of correlative features and fit the ML Model\"
-        f"and in turn predict sale prices.\"
-        f"Our target variable is the 'SalePrice'\"
-        f""
-        f"The currency in which the sale prices are recorded is the US Dollar")
+        f"* The dataset represents properties sold in Ames, Iowa. "
+        f"Here is a link to the live dataset from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/). "
+        f"It contain varying data regarding the same 24 attributes which each property is measured against. "
+        f"We use this very data to complete our study of correlative features and fit the ML Model "
+        f"and in turn predict the sale prices of properties of that area. "
+        f"Our target variable is the 'SalePrice'. "
+        f"The currency in which the sale prices are recorded is the US Dollar "
+        )
 
     # Link to README file, so the users can have access to full project documentation
     st.write(
         f"* For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/JessMair/milestone-project-heritage-housing-issues).")
+        f"[Project README file](https://github.com/JessMair/milestone-project-heritage-housing-issues). "
+        )
     
 
     # copied from README file - "Business Requirements" section
     st.success(
         f"* **Business Requirement 1**\n"
 
-	    f"The client is interested in discovering the correlations between house prices "
+	    f"The client is interested in discovering the correlations between house prices"
         f"and the varying attributes that affect their value. " 
 	    f"The client requires a dashboard that displays data visualizations of the correlated variable.\n"
 
