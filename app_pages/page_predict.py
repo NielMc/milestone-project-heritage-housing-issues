@@ -23,6 +23,8 @@ st.info(
         f" In addition to this, she also wishes to be able to predict the price of any other house in Ames, Iowa"
 	)
 st.write("---")
+st.write("We can use the toggles below to inputand amend data to gain insights in the "
+        "estimated house price. Please note, the values are set at a default of median value. ")
 
 	
 # Generate Live Data
@@ -32,27 +34,15 @@ X_live = DrawInputsWidgets()
 # predict on live data
 if st.button("Run Predictive Analysis"): 
     predict_sale_price(X_live, house_features, sale_price_pipeline)
-		churn_prediction = predict_churn(X_live, churn_features, churn_pipe_dc_fe, churn_pipe_model)
-		
-		if churn_prediction == 1:
-			predict_tenure(X_live, tenure_features, tenure_pipe, tenure_labels_map)
 
-		predict_cluster(X_live, cluster_features, cluster_pipe, cluster_profile)
-			
+st.write("---")
+st.write("Below we have the information the client requires regarding the sale price of "
+            "of the clients inherited houses")
 
+in_df = load_inherited_house_data()
+filtered_df = in_df[['OverallQual', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'GarageArea']]
 
-
-def check_variables_for_UI(tenure_features, churn_features, cluster_features):
-	import itertools
-
-	# The widgets inputs are the features used in all pipelines (tenure, churn, cluster)
-	# We combine them only with unique values
-	combined_features = set(
-		list(
-			itertools.chain(tenure_features, churn_features, cluster_features)
-			)
-		)
-	st.write(f"* There are {len(combined_features)} features for the UI: \n\n {combined_features}")
+st.write(filtered_df)
 
 
 
