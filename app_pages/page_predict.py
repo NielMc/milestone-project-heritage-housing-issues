@@ -4,7 +4,7 @@ from src.data_management import load_house_data, load_pkl_file, load_inherited_h
 from src.machine_learning.predictive_analysis_ui import predict_sale_price
 from datetime import date
 
-def predict_house_price():
+def prediction_tool():
 	
 # load predict sale_price files
 
