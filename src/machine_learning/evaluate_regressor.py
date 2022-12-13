@@ -1,6 +1,8 @@
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error 
 import numpy as np
 
+# Taken from the model and evaluation notebook 
+
 """
 Results of the regression evaluation
 """
