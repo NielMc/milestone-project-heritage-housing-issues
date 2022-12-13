@@ -56,4 +56,3 @@ def ml_predictor ():
     regression_performance(X_train=X_train, y_train=y_train,
                         X_test=X_test, y_test=y_test,
                         pipeline=regressor_pipeline)
-

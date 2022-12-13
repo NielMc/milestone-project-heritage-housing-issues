@@ -24,5 +24,3 @@ statement = (
 st.write(statement)
 		
 st.write(proba)
-
-return price_prediction

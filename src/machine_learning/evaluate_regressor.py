@@ -4,18 +4,15 @@ import numpy as np
 # Taken from the model and evaluation notebook 
 
 """
-Results of the regression evaluation
+# R2 Score and Mean Absolute Error for the test and train sets
 """
 def regression_performance(X_train, y_train, X_test, y_test,pipeline):
-	st.write("Model Evaluation \n")
-	st.write("* Train Set")
-	regression_evaluation(X_train,y_train,pipeline)
-	st.write("* Test Set")
-	regression_evaluation(X_test,y_test,pipeline)
+  st.write("Model Evaluation \n")
+  st.write("* Train Set")
+  regression_evaluation(X_train,y_train,pipeline)
+  st.write("* Test Set")
+  regression_evaluation(X_test,y_test,pipeline)
 
-"""
-Code to returns R2 score for both test and train sets for pipeline
-"""
 def regression_evaluation(X,y,pipeline):
   prediction = pipeline.predict(X)
   st.write('R2 Score:', r2_score(y, prediction).round(3))  
