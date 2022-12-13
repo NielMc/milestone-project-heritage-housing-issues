@@ -48,13 +48,12 @@ def ml_predictor ():
     # show best features
     st.write("* The features the model was trained and their importance")
     st.write(X_train.columns.to_list())
-    st.image(features_importance)
+    st.image(sale_price_importance)
     st.write("---")
 
     # evaluate performance on both sets
     st.write("### Pipeline Performance")
     regression_performance(X_train=X_train, y_train=y_train,
                         X_test=X_test, y_test=y_test,
-                        pipeline=tenure_pipe,
-                        label_map= tenure_labels_map )
+                        pipeline=regressor_pipeline)
 

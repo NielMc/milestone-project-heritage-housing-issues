@@ -7,7 +7,7 @@ import numpy as np
 Results of the regression evaluation
 """
 def regression_performance(X_train, y_train, X_test, y_test,pipeline):
-	st,write("Model Evaluation \n")
+	st.write("Model Evaluation \n")
 	st.write("* Train Set")
 	regression_evaluation(X_train,y_train,pipeline)
 	st.write("* Test Set")
