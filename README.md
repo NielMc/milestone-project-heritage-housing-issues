@@ -109,6 +109,16 @@ A machine learning Pipeline will also need to be deployed as a part of the 2nd b
 ## Main Data Analysis and Machine Learning Libraries
 * Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
 
+
+## Technologies used 
+* Github - 
+* Gitpod - Used as a local workspace 
+* Streamlit - To develop and display dashboard
+* Heroku - 
+
+## Languages used
+* Python 
+
 ## Refrences
 https://pythonguides.com/how-to-find-duplicates-in-python-dataframe/
 Checking for duplicated data  
