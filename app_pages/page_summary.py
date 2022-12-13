@@ -12,11 +12,13 @@ def summary_body():
         
     
         f"**Project Dataset**\n"
-        f"* The dataset represents a . "
-        f"Containing individual customer data on the products and services "
-        f"(like internet type, online security, online backup, tech support), "
-        f"account information (like contract type, payment method, monthly charges) "
-        f"and profile (like gender, partner, dependents).")
+        f"* The dataset represents properties sold in Ames, Iowa.\"
+        f"It contain varying data regarding the same 24 attributes which each property is measured against.\"
+        f"We use this very data to complete our study of correlative features and fit the ML Model\"
+        f"and in turn predict sale prices.\"
+        f"Our target variable is the 'SalePrice'\"
+        f""
+        f"The currency in which the sale prices are recorded is the US Dollar")
 
     # Link to README file, so the users can have access to full project documentation
     st.write(
