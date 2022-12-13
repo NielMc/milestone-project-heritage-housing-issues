@@ -7,8 +7,8 @@ def summary_body():
     # text based on README file - "Dataset Content" section
     st.info(
         f"**Project Terms & Jargons**\n"
-        f"* A **House** is .\n"
-        f"* The **Sale Price** .\n"
+        f"* A **House** is a building that serves as living quaters for one or more families.\n" 
+        f"* The **Sale Price** is the price at which the house will sell and is also the *target variable* for this study.\n"
         
     
         f"**Project Dataset**\n"
@@ -31,7 +31,7 @@ def summary_body():
 	    f"The client is interested in discovering the correlations between house prices "
         f"and the varying attributes that affect their value. " 
 	    f"The client requires a dashboard that displays data visualizations of the correlated variable.\n"
-        
+
 
         f"* **Business Requirements 2**\n"
 
