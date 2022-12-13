@@ -34,23 +34,33 @@
 
 
 ## Business Requirements
-As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
+Our client has received an inheritance from a deceased great-grandfather located in Ames, Iowa.
+We have been contacted to help in maximising the sales price for the inherited properties.
 
-Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that
+Our client wishes to base any estimates regarding the value of her inherited properties property on a well researched study to avoid inaccurate appraisals.Although the client does have a good understanding of properties in her own state, she also accepts that what makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. 
+The client is providing the dataset from kaggle. 
 
-* 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
-* 2 - The client is interested in predicting the house sale price from her 4 inherited houses, and any other house in Ames, Iowa.
+- Business Requirement 1
+Client is interested in discovering the correlations between house prices and the varying attributes that affect their value. 
+The client requires a dashboard that displays data visualizations of the correlated variable.
+
+- Business Requirements 2
+The client wants to be able to predict the sale price of any property in Ames, Iowa; including the inherited properties. 
+This will require the use of data analysis tools that allow the user to interact and amend variables in order to generate price predictions. 
+A machine learning Pipeline will also need to be deployed as a part of the 2nd business requirement.
+
 
 
 ## Hypothesis and how to validate?
 
--	Hypothesis 1 - The larger the square footage of the property the higher the price 
+- Hypothesis 1 - The larger the square footage of the property the higher the price 
         * By studying correlations between the size of the property (in square footage) and the sale value, we will be able to observe if this variable is a factor that influences price. 
--	Hypothesis 2 - The more recent the property build, the higher the property sale price/value (null hypothesis)
+- Hypothesis 2 - The more recent the property build, the higher the property sale price/value (null hypothesis)
         * We will study data regarding the house build data and observe whether it correlates with a higher house value. 
--	Hypothesis 3 - The better the overall quality of the property, the higher the price
+- Hypothesis 3 - The better the overall quality of the property, the higher the price
         * We will check whether a property that has been rated as having a higher "overall quality" will also be higher in value 
--   Hypothesis 4 - The larger the square footage of the property and the higher the overall quality will result in a higher sale price compared with a smaller square footage property of a similar overall quality finish. 
+- Hypothesis 4 - The larger the square footage of the property and the higher the overall quality will result in a higher 
+        sale price compared with a smaller square footage property of a similar overall quality finish. 
         * We look at data that examines the correlation between size and quality, and how it affects the properties sale price. 
 
 
@@ -66,6 +76,17 @@ Although your friend has an excellent understanding of property prices in her ow
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
 * Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+
+## Epics
+* Information gathering and data collection.
+
+* Data visualization, cleaning, and preparation.
+
+* Model training, optimization and validation.
+
+* Dashboard planning, designing, and development.
+
+* Dashboard deployment and release.
 
 
 
@@ -94,6 +115,9 @@ Checking for duplicated data
 
 ## Credits 
 
+- Kaggle - dataset on which the study was based
+- Code Institute - for the learning materials and template for the project
+- 
 * In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 * You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
@@ -111,9 +135,9 @@ Checking for duplicated data
 
 
 ## Acknowledgements (optional)
-* In case you would like to thank the people that provided support through this project.
+* I would like to thank Neil McEwen of Code Institute for his patience and assitance with my many queries on slack
 
 
 
 # Bugs 
-I had a reoccuring issue where I had made extensive notes in markdown format, analysing the plots following eature engineering. The text and subsequent code kept on disapearing. 
+I had a reoccuring issue where I had made extensive notes in markdown format, analysing the plots following feature engineering. The text and subsequent code kept on disapearing. I had to create a new gitpod workspace several times during this project to overcome this issue. 

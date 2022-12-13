@@ -26,13 +26,18 @@ def summary_body():
 
     # copied from README file - "Business Requirements" section
     st.success(
-        f"The project has 2 business requirements:\n"
-        f"* 1 - The client is interested to understand the patterns from customer base, "
-        f"so that the client can learn the most relevant variables that are correlated to a "
-        f"churned customer.\n"
-        f"* 2 - The client is interested in determining whether or not a given prospect will churn. "
-        f"If so, the client is interested to know when. In addition the client is "
-        f"interested in learning from which cluster this prospect will belong in the customer base. "
-        f"Based on that, present potential factors that could maintain and/or bring  "
-        f"the prospect to a non-churnable cluster."
+        f"* **Business Requirement 1**\n"
+
+	    f"The client is interested in discovering the correlations between house prices "
+        f"and the varying attributes that affect their value. " 
+	    f"The client requires a dashboard that displays data visualizations of the correlated variable.\n"
+        
+
+        f"* **Business Requirements 2**\n"
+
+	    f"The client wants to be able to predict the sale price of any property in Ames, Iowa;"
+        f"including the inherited properties."
+	    f"This will require the use of data analysis tools that allow the user to interact and amend variables 2"
+        f"in order to generate price predictions."
+	    f"A machine learning Pipeline will also need to be deployed as a part of the 2nd business requirement."
         )
