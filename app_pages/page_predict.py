@@ -1,12 +1,10 @@
-#The code for this file has been taken from churnometer, page prospect with amendments made
-
 import streamlit as st
 import pandas as pd
 from src.data_management import load_house_data, load_pkl_file, load_inherited_house_data
 from src.machine_learning.predictive_analysis_ui import predict_sale_price
 from datetime import date
 
-def prediction_tool():
+def predict_house_price():
 	
 # load predict sale_price files
 
@@ -126,7 +124,8 @@ with col5:
 
 X_live[feature] = st_widget
 
-
 # st.write(X_live)
 
-return X_live 
+#return X_live
+
+#The code for this file has been taken from churnometer, page prospect with amendments made

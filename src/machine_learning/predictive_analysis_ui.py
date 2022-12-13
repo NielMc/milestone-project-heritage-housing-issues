@@ -10,7 +10,7 @@ def predict_sale_price(X_live, house_features, sale_price_pipeline):
 	X_live_churn = X_live.filter(house_features)
 
 	# predict
-	sale_price_prediction_proba = sale_price_pipeline_model.predict(X_live_price)
+	sale_price_prediction_proba = sale_price_pipeline.predict(X_live_price)
 	
 	# Create a logic to display the results
     

@@ -2,8 +2,6 @@
 Hard copy of code from churnometer - predict tenure notebook. 
 Adjustments havev been made to reflect data from the current study
 """
-
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -21,8 +19,8 @@ def ml_predictor ():
     sale_price_importance = plt.imread(f"outputs/ml_pipeline/predict_saleprice/{version}/features_importance.png")
     X_train = pd.read_csv(f"outputs/ml_pipeline/predict_saleprice/{version}/X_train.csv")
     X_test = pd.read_csv(f"outputs/ml_pipeline/predict_saleprice/{version}/X_test.csv")
-    y_train =  pd.read_csv(f"outputs/ml_pipeline/predict_saleprice/{version}/y_train.csv")
-    y_test =  pd.read_csv(f"outputs/ml_pipeline/predict_saleprice/{version}/y_test.csv")
+    y_train = pd.read_csv(f"outputs/ml_pipeline/predict_saleprice/{version}/y_train.csv")
+    y_test = pd.read_csv(f"outputs/ml_pipeline/predict_saleprice/{version}/y_test.csv")
 
  
 
