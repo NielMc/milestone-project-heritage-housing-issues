@@ -8,7 +8,7 @@ import numpy as np
 # R2 Score and Mean Absolute Error for the test and train sets
 """
 def regression_performance(X_train, y_train, X_test, y_test,pipeline):
-  st.write("Model Evaluation /n ")
+  st.write("Model Evaluation")
   st.write("* Train Set")
   regression_evaluation(X_train,y_train,pipeline)
   st.write("* Test Set")

@@ -13,7 +13,7 @@ def p5_ml_predictor ():
 
     st.write("### ML Predict")
 
-    # load tenure pipeline files
+    # load pipeline files
     version = 'v1'
     regressor_pipeline = load_pkl_file(f"outputs/ml_pipeline/predict_saleprice/{version}/regressor_pipeline.pkl")
     house_features = pd.read_csv(f"outputs/ml_pipeline/predict_saleprice/{version}/X_train.csv")
