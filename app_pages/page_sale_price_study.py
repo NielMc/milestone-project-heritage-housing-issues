@@ -7,7 +7,7 @@ from feature_engine.discretisation import ArbitraryDiscretiser
 import numpy as np
 import plotly.express as px
 
-def study ():
+def p2_study ():
 
     # load data
     df = load_house_data()

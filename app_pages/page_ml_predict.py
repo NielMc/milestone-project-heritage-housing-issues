@@ -1,14 +1,15 @@
-"""
-Hard copy of code from churnometer - predict tenure notebook. 
-Adjustments havev been made to reflect data from the current study
-"""
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from src.data_management import load_house_data, load_pkl_file
 from src.machine_learning.evaluate_regressor import regression_performance, regression_evaluation_plots
 
-def ml_predictor ():
+"""
+Hard copy of code from churnometer - predict tenure notebook. 
+Adjustments havev been made to reflect data from the current study
+"""
+
+def p5_ml_predictor ():
 
     st.write("### ML Predict")
 
@@ -24,7 +25,7 @@ def ml_predictor ():
 
  
 
-    st.write("### ML Pipeline: Predict Prospect Tenure")    
+    st.write("### ML Pipeline: Predict Sale Price")    
     # display pipeline training summary conclusions
     st.info(
         f"* Initially we wanted to have a Regressor model to predict tenure for a likely "

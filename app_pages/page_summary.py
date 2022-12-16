@@ -1,6 +1,6 @@
 import streamlit as st
 
-def summary_body():
+def p1_summary_body():
 
     st.write("### Project Summary")
 
