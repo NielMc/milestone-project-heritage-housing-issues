@@ -45,11 +45,11 @@ def p1_summary_body():
     st.info(
             
         f"**Project Dataset**\n"
-        f"* The dataset represents properties sold in Ames, Iowa. "
-        f"Here is a link to the live dataset from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/). "
+        f"* The **dataset** represents properties sold in Ames, Iowa. "
+        f"Here is a link to the live dataset from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data). "
         f"It contains varying data regarding the same 24 attributes which each property is measured against. "
-        f"We use this very data to complete our study of correlative features and fit the ML Model "
-        f"and in turn predict the sale prices of properties of that area. "
-        f"Our target variable is the 'SalePrice'. "
+        f"We use this very data to complete our study of correlative features and fit the **ML Model** "
+        f"and in turn predict the sale prices of properties in that area. "
+        f"Our **target** variable is the **'SalePrice'**. "
         f"The currency in which the sale prices are recorded is the US Dollar "
         )
