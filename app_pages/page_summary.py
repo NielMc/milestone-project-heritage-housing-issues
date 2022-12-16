@@ -6,15 +6,15 @@ def p1_summary_body():
 
     # text based on README file - "Dataset Content" section
     st.info(
-        f"**Project Terms & Jargons**\n"
-        f"* A **House** is a building that serves as living quaters for one or more families.\n"
-        f"* The **Sale Price** is the price at which the house will sell and is also the *target variable* for this study.\n"
+        f"**Project Terms & Jargons** \n"
+        f"* A **House** is a building that serves as living quarters for one or more families.\n\n"
+        f"* The **Sale Price** is the price at which the house will sell and is also the *target variable* for this study.\n\n"
         
     
         f"**Project Dataset**\n"
         f"* The dataset represents properties sold in Ames, Iowa. "
         f"Here is a link to the live dataset from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/). "
-        f"It contain varying data regarding the same 24 attributes which each property is measured against. "
+        f"It contains varying data regarding the same 24 attributes which each property is measured against. "
         f"We use this very data to complete our study of correlative features and fit the ML Model "
         f"and in turn predict the sale prices of properties of that area. "
         f"Our target variable is the 'SalePrice'. "
@@ -32,16 +32,16 @@ def p1_summary_body():
     st.success(
         f"* **Business Requirement 1**\n"
 
-	    f"The client is interested in discovering the correlations between house prices"
+	    f"The client is interested in discovering the correlations between house prices "
         f"and the varying attributes that affect their value. " 
-	    f"The client requires a dashboard that displays data visualizations of the correlated variable.\n"
+	    f"The client requires a dashboard that displays data visualizations of the correlated variable.\n\n"
 
 
         f"* **Business Requirements 2**\n"
 
-	    f"The client wants to be able to predict the sale price of any property in Ames, Iowa;"
-        f"including the inherited properties."
-	    f"This will require the use of data analysis tools that allow the user to interact and amend variables 2"
-        f"in order to generate price predictions."
+	    f"The client wants to be able to predict the sale price of any property in Ames, Iowa; "
+        f"including the inherited properties. \n"
+	    f"This will require the use of data analysis tools that allow the user to interact and amend variables "
+        f"to generate price predictions. "
 	    f"A machine learning Pipeline will also need to be deployed as a part of the 2nd business requirement."
         )
