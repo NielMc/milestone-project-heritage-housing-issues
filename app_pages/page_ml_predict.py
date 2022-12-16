@@ -28,8 +28,8 @@ def p5_ml_predictor ():
     st.write("### ML Pipeline: Predict Sale Price")    
     # display pipeline training summary conclusions
     st.info(
-        f"* The ML Pipeline has been deployed to answer the **second business requirment**: \n\n"
-        f"* Delivering an ML system capable of relaibly predicting the sale price of "
+        f"* The ML Pipeline has been deployed to answer the **second business requirement**: \n\n"
+        f"* Delivering an ML system capable of reliably predicting the sale price of "
         f"the four inherited houses. \n\n"
         f"* We decided that a **Regressor model** would be best for predicting "
         f"the **Sale Price** of the houses. "
