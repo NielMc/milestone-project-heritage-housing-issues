@@ -12,16 +12,14 @@ def p2_study ():
     # load data
     df = load_house_data()
 
-    # hard copied from churned customer study notebook
     vars_to_study = ['OverallQual', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'GarageArea']
 
     st.write("### House Price Study")
     st.info(
-        f"* The client is interested in discovering the patterns from the dataset pertaining to house sale values. "
-        f"This is so that they are aware of the most relevant variables correlated "
-        f"to a the sale price. This will be demonstrated via the use of data visualisations. "
-        )
-
+        f"We will address the first busines requirement. \n\n"
+        f"* The client is interested in discovering the patterns from the dataset pertaining to house sales in Iowa. "
+        f"This is so that she is aware of which variable are correlated and their sale price "
+    )
 
     # inspect data
     if st.checkbox("Inspect House Dataset"):
@@ -37,13 +35,18 @@ def p2_study ():
     # Correlation Study Summary
     st.write(
         f"* A correlation study was conducted in the notebook to better understand how "
-        f"the variables are correlated to the 'SalePrice'. \n"
-        f"The most correlated variable are: **{vars_to_study}**"
+        f"the variables are correlated to the 'SalePrice'. \n\n"
+        f"* The most correlated variable are: **{vars_to_study}**"
     )
 
-    # Text based on "02 - Churned Customer Study" notebook - "Conclusions and Next steps" section
+    # Text based on "Sale_Price_Study" notebook - "Conclusions and Next steps" section
     st.info(
-        f""
+        f"We used Pearson and Spearman methods to check the levels of correlations "
+        f"between all variables and their correlation against the sale price. "
+        f"Both Pearson and Spearman revelaved the same insights about the interrelationship of the "
+        f"variables. "
+        f"* The 'SalePrice' was strongly correlated with 'OverallQual' and 'GrLivArea'. "
+        f"We explored this further:"
     )
 
 
