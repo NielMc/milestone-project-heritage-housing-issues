@@ -43,7 +43,7 @@ def p2_study ():
     st.info(
         f"We used Pearson and Spearman methods to check the levels of correlations "
         f"between all variables and their correlation against the sale price. "
-        f"Both Pearson and Spearman revelaved the same insights about the interrelationship of the "
+        f"Both Pearson and Spearman revelaved the similar insights about the inter-relationship of the "
         f"variables. "
         f"* The 'SalePrice' was strongly correlated with 'OverallQual' and 'GrLivArea'. "
         f"We explored this further:"
