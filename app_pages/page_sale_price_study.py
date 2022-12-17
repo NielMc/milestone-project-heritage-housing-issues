@@ -46,7 +46,8 @@ def p2_study ():
         f"Both Pearson and Spearman revelaved the similar insights about the inter-relationship of the "
         f"variables. "
         f"* The 'SalePrice' was strongly correlated with 'OverallQual' and 'GrLivArea'. "
-        f"We explored this further:"
+        f"These variables are a common factor in influencing property price in general. "
+        f"We explored this further by testing our hypothesis: "
     )
 
 

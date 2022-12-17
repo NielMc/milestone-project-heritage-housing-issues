@@ -18,11 +18,5 @@ def p4_hypothesis_and_validation():
     f"**Hypothesis 2** - The more recent the property build, the higher the property sale price/value (null hypothesis)\n"
     f" We will study data regarding the house build data and observe whether it correlates with a higher house value.\n\n"
 
-    f"**Hypothesis 3** - The better the overall quality of the property, the higher the price\n\n"
-    
-
-    f"**Hypothesis 4** - The larger the square footage of the property and the higher the overall quality\
-    will result in a higher sale price compared with a smaller square footage property of a similar overall quality finish.\n"
-    f"* We look at data that examines the correlation between size and quality, and how it affects the properties sale price.\n"
+    f"**Hypothesis 3** - The better the overall quality of the property, the higher the price \n\n"
     )
-
