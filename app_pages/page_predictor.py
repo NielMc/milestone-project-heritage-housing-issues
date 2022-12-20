@@ -78,7 +78,8 @@ def DrawInputsWidgets():
 			label= feature,
 			min_value= 0, 
 			max_value= 10,
-			value= df[feature].median(),        
+			value= int(df[feature].median()), 
+            step = 1       
 			)
 	X_live[feature] = st_widget
 
@@ -86,29 +87,32 @@ def DrawInputsWidgets():
 		feature = "GrLivArea"
 		st_widget = st.number_input(
 			label= feature,
-			min_value= df[feature].min()*percentageMin, 
-			max_value= df[feature].max()*percentageMax,
-			value= df[feature].median(), 
+			min_value= int(df[feature].min()*percentageMin), 
+			max_value= int(df[feature].max()*percentageMax),
+			value= int(df[feature].median()), 
+            step= 50
 			)
 	X_live[feature] = st_widget
 
-    with col3:
+	with col3:
 		feature = "YearBuilt"
 		st_widget = st.number_input(
-			label= feature,
-			min_value= df[feature].min()*percentageMin, 
-			max_value= date.today().year,
-			value= df[feature].median(), 
+			label = feature,
+			min_value = int(df[feature].min()*percentageMin), 
+			max_value = date.today().year,
+			value = int(df[feature].median()), 
+            step = 1
 			)
 	X_live[feature] = st_widget
 
-    with col4:
+	with col4:
 		feature = "GarageArea"
 		st_widget = st.number_input(
-			label= feature,
-			min_value= df[feature].min()*percentageMin, 
-			max_value= df[feature].max()*percentageMax,
-			value= df[feature].median(), 
+			label = feature,
+			min_value = int(df[feature].min()*percentageMin), 
+			max_value = int(df[feature].max()*percentageMax),
+			value = int(df[feature].median()), 
+            step = 25
 			)
 	X_live[feature] = st_widget
 
@@ -116,12 +120,12 @@ def DrawInputsWidgets():
 		feature = "TotalBsmtSF"
 		st_widget = st.number_input(
 			label= feature,
-			min_value= df[feature].min()*percentageMin, 
-			max_value= df[feature].max()*percentageMax,
-			value= df[feature].median(), 
+			min_value= int(df[feature].min()*percentageMin), 
+			max_value= int(df[feature].max()*percentageMax),
+			value= int(df[feature].median()), 
+            step= 50
 			)
 	X_live[feature] = st_widget
-
 
 	# st.write(X_live)
 
