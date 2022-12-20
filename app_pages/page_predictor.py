@@ -7,7 +7,7 @@ from datetime import date
 def p5_widgets():
     #load required files
     version = 'v1'
-    regressor_pipeline = load_pkl_file(f"outputs/ml_pipeline/predict_saleprice/{version}/regressor_pipeline.pkl")
+    sale_price_pipeline = load_pkl_file(f"outputs/ml_pipeline/predict_saleprice/{version}/regressor_pipeline.pkl")
     house_features = (pd.read_csv(f"outputs/ml_pipeline/predict_saleprice/{version}/X_train.csv")
                             .columns
                             .to_list())

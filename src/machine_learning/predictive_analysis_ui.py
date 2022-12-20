@@ -3,7 +3,7 @@ import streamlit as st
 def predict_sale_price(X_live, house_features, sale_price_pipeline):
 
 	# from live data, subset features related to this pipeline
-	X_live_sale_price = X_live.filter(sale_price_features)
+	X_live_sale_price = X_live.filter(house_features)
 
 	# predict
 	sale_price_prediction_proba = sale_price_pipeline.predict(X_live_sale_price)
