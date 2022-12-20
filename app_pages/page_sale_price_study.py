@@ -14,6 +14,10 @@ def p2_study ():
 
     vars_to_study = ['OverallQual', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'GarageArea']
 
+    df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
+
+
+
     st.write("### House Price Study")
     st.info(
         f"We will address the first busines requirement. \n\n"
@@ -52,23 +56,97 @@ def p2_study ():
 
 # Code copied from 'Sale_Price_study' notebook - Data visualisation section
 # Individual plots per variable
-
+    df_eda = df.filter(vars_to_study + ['SalePrice'])
+    target_var = 'SalePrice'
+    
+# Histograms of all important variables
     if st.checkbox("Sale Price Distribution of Variables"):
-        df_eda = df.filter(vars_to_study + ['SalePrice'])
-        target_var = 'SalePrice'
-        variable_corr(df_eda, target_var)
+       plot_hist(df, target_var)
+
+# Correlation heatmaps 
+
+    if st.checkbox("Pearson Correlation"):
+        heatmap_corr(df=df_corr_pearson, threshold=0.4,
+                     figsize=(20, 12), font_annot=12)
+
+    if st.checkbox("Spearman Correlation"):
+        heatmap_corr(df=df_corr_spearman, threshold=0.4,
+                     figsize=(20, 12), font_annot=12)
+
+    if st.checkbox("Predictive Power Score"):
+        heatmap_pps(df=pps_matrix, threshold=0.2,
+                    figsize=(20, 12), font_annot=12)
+
+# Scatter plots of plots to explore hypothesis
+
+    # if st.checkbox("Correlation between Ground Living Area and Sale Price"):
+    #     area_scatter(df, col, target_var)
+
+    # if st.checkbox("Correlation between Year Built Area and Sale Price"):
+    #     year_scatter()
+
+
+    # if st.checkbox("Correlation between the Overall Quality and Sale Price"):
+    #     quality_scatter()
+
+
 
 def variable_corr(df_eda, target_var):
     
     for col in df_eda.drop([target_var], axis=1).columns.to_list():
-            plot_numerical(df_eda, col, target_var)
+            plot_hist(df, target_var)(df_eda, col, target_var)
 
 
-def plot_numerical(df, col, target_var, hue_order):
+def plot_hist(df, target_var):
     fig, axes = plt.subplots(figsize=(8, 5))
-    fig = sns.histplot(data=df, x=col, hue=target_var, hue_order=hue_order, kde=True, element="step") 
+    sns.histplot(data=df, x=target_var, kde=True)
     plt.title(f"{target_var} distribution", fontsize=20, y=1.05)
     st.pyplot(fig)
 
+# def area_scatter(df, col, target_var):
+#     fig, axes = plt.subplots(figsize=(8, 5))
+#     sns.scatterplot(data=df, x=col, y=target_var)
+#     st.plyplot()
+
+# Copied from Data_cleaning notebook - correlation and pps analysis 
+
+def heatmap_corr(df,threshold, figsize=(20,12), font_annot = 8):
+  if len(df.columns) > 1:
+    mask = np.zeros_like(df, dtype=np.bool)
+    mask[np.triu_indices_from(mask)] = True
+    mask[abs(df) < threshold] = True
+
+    fig, axes = plt.subplots(figsize=figsize)
+    sns.heatmap(df, annot=True, xticklabels=True, yticklabels=True,
+                mask=mask, cmap='viridis', annot_kws={"size": font_annot}, ax=axes,
+                linewidth=0.5
+                     )
+    axes.set_yticklabels(df.columns, rotation = 0)
+    plt.ylim(len(df.columns),0)
+    st.pyplot(fig)
 
 
+def heatmap_pps(df,threshold, figsize=(20,12), font_annot = 8):
+    if len(df.columns) > 1:
+      mask = np.zeros_like(df, dtype=np.bool)
+      mask[abs(df) < threshold] = True
+
+      fig, ax = plt.subplots(figsize=figsize)
+      ax = sns.heatmap(df, annot=True, xticklabels=True,yticklabels=True,
+                       mask=mask,cmap='rocket_r', annot_kws={"size": font_annot},
+                       linewidth=0.05,linecolor='grey')
+      
+      plt.ylim(len(df.columns),0)
+      st.pyplot(fig)
+
+def CalculateCorrAndPPS(df):
+    df_corr_spearman = df.corr(method="spearman")
+    df_corr_pearson = df.corr(method="pearson")
+    pps_matrix_raw = pps.matrix(df)
+    pps_matrix = pps_matrix_raw.filter(['x', 'y', 'ppscore']).pivot(columns='x', index='y', values='ppscore')
+
+    return df_corr_pearson, df_corr_spearman, pps_matrix
+
+  
+
+  
