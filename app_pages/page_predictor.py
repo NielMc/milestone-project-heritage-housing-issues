@@ -29,3 +29,25 @@ def p5_widgets():
     "estimated house price. Please note, the values are set at a default of median value")
 
     # Generate Live Data
+
+    if st.button("Run Predictive Analysis"):
+        predict_sale_price(DrawInputsWidgets(), house_features, sale_price_pipeline)
+
+    st.write("---")
+    st.write("Below we have the information the client requires regarding the sale price of "
+    "of the clients inherited houses")
+
+    in_df = load_inherited_house_data()
+    filtered_df = in_df[['OverallQual', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'GarageArea']]
+
+    st.write(filtered_df)
+
+    st.write("The data pertaining to the inherited house was processed through the prediction application. "
+        "Here are the figures of their estimated value: \n\n "
+            "* $126,449 \n "
+          "* $150,322 \n "
+          "* $170,148 \n "
+          "* $181,897 ")
+
+    st.write("---")
+
