@@ -1,4 +1,5 @@
 import streamlit as st
+import ppscore as pps
 from src.data_management import load_house_data
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -80,14 +81,14 @@ def p2_study ():
 # Scatter plots of plots to explore hypothesis
 
     # if st.checkbox("Correlation between Ground Living Area and Sale Price"):
-    #     area_scatter(df, col, target_var)
+    #      area_scatter(df, col, target_var)
 
     # if st.checkbox("Correlation between Year Built Area and Sale Price"):
-    #     year_scatter()
+    #      year_scatter()
 
 
-    # if st.checkbox("Correlation between the Overall Quality and Sale Price"):
-    #     quality_scatter()
+    #  if st.checkbox("Correlation between the Overall Quality and Sale Price"):
+    # #     quality_scatter()
 
 
 
