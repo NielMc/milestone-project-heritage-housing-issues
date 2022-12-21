@@ -17,6 +17,7 @@ def p2_study ():
 
     df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
 
+
     st.write("### House Price Study")
     st.info(
         f"We will address the first busines requirement. \n\n"
@@ -54,31 +55,9 @@ def p2_study ():
     )
 
 # Code copied from 'Sale_Price_study' notebook - Data visualisation section
-
-# Histograms of the distribution 
-    if st.checkbox("Distribution of Sale Price"):
-        df_eda = df.filter(vars_to_study + ['SalePrice'])
-        target_var = 'SalePrice'
-        plot_hist(df, target_var)
-
-# Scatter plots of plots to explore hypothesis
-    if st.checkbox("Correlation between Living Area and Sale Price"):
-        var_observe = ['GrLivArea']
-        df_eda = df.filter(var_observe + ['SalePrice'])
-        target_var = 'SalePrice'
-        variable_corr(df_eda, target_var)
-
-    if st.checkbox("Correlation between Year Built and Sale Price"):
-        var_observe = ['YearBuilt']
-        df_eda = df.filter(var_observe + ['SalePrice'])
-        target_var = 'SalePrice'
-        variable_corr(df_eda, target_var)
-    
-    if st.checkbox("Correlation between the Overall Quality and Sale Price"):
-        var_observe = ['YearBuilt']
-        df_eda = df.filter(var_observe + ['SalePrice'])
-        target_var = 'SalePrice'
-        variable_corr(df_eda, target_var)
+    df_eda = df.filter(vars_to_study + ['SalePrice'])
+    if st.checkbox("Correlation of variable to Sale Price"):
+        correlation_to_sale_price(df_eda, vars_to_study)
 
 
 # Correlation heatmaps 
@@ -96,28 +75,23 @@ def p2_study ():
                     figsize=(20, 12), font_annot=12)
 
 
-def variable_corr(df_eda):
+# Copied from Data_cleaning notebook - correlation and pps analysis 
 
-    target_var = 'SalePrice'
-    vars_to_study = ['OverallQual', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'GarageArea']
-    var1 = ['GrLivArea']
-    for col in df_eda.drop([target_var], axis=1).columns.to_list():
-             plot_hist(df, target_var)
-                
-
-def plot_hist(df, target_var):
+def plot_numerical(df, col, target_var):
     fig, axes = plt.subplots(figsize=(8, 5))
-    sns.histplot(data=df, x=target_var, kde=True)
-    plt.title(f"{target_var} distribution", fontsize=20, y=1.05)
+    sns.histplot(data=df, x=col, y=target_var,
+                 kde=True, element="step")
+    plt.title(f"{col}", fontsize=20, y=1.05)
     st.pyplot(fig)
 
-def plot_scatter(df, col, target_var):
-    fig, axes = plt.subplots(figsize=(8, 5))
-    sns.scatterplot(data=df, x=col, y=target_var, ci=None)
-    plt.title(f"{col}", fontsize=20,y=1.05)
-    st.plyplot()
 
-# Copied from Data_cleaning notebook - correlation and pps analysis 
+def correlation_to_sale_price(df_eda, vars_to_study):
+    target_var = 'SalePrice'
+    for col in ['GarageArea', 'GrLivArea', 'OverallQual', 'TotalBsmtSF', 'YearBuilt']:
+        plot_numerical(df_eda, col, target_var)
+        st.write("\n\n")
+
+
 
 def heatmap_corr(df,threshold, figsize=(20,12), font_annot = 8):
   if len(df.columns) > 1:
