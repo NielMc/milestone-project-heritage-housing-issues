@@ -1,10 +1,33 @@
 # Heritage Housing Issues
 
-[](media.amiresponsive.png)
+This is my 5th and final project for the Code Institute "Full Stack Dveloper" Diploma. 
+Predictive Analytics is something which has always interested me and I have been very excited to reach this point in the course. I had longed to learn and practice these skills, as well as gain an understanding into a world which fascinates me. I present my [first ever dashboard,](https://heritagehouse.herokuapp.com/) but certainly not my last. 
 
+![Head image](media/amiresponsive.png)
 
+---
+# Table of Contents
+<details>
+<summary>Table of Contents</summary>
+
+* [Dataset Content](#dataset-content)
+* [Business Requirements](#business-requirements)
+* [User Stories](#user-stories)
+* [Hypothesis and how to validate?](#hypothesis-and-how-to-validate?)
+* [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks) 
+* [ML Business Case](#ml-business-case)
+* [Dashboard Design](#dashboard-design)
+* [Bugs](#bugs)
+* [Deployment](#deployment)  
+* [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries) 
+* [Credits](#credits)  
+</details>
+<hr>
+
+---
 ## Dataset Content
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We created then a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
+* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). 
+The user story where predictive analytics can be applied in a real project in the workplace. 
 * The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa; indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
@@ -39,20 +62,12 @@
 
 
 ## Business Requirements
-Our client has received an inheritance from a deceased great-grandfather located in Ames, Iowa.
-We have been contacted to help in maximising the sales price for the inherited properties.
+As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to help in maximising the sales price for the inherited properties.
 
-Our client wishes to base any estimates regarding the value of her inherited properties property on a well researched study to avoid inaccurate appraisals.Although the client does have a good understanding of properties in her own state, she also accepts that what makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. 
-The client is providing the dataset from kaggle. 
+Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
 
-- Business Requirement 1
-Client is interested in discovering the correlations between house prices and the varying attributes that affect their value. 
-The client requires a dashboard that displays data visualizations of the correlated variable.
-
-- Business Requirements 2
-The client wants to be able to predict the sale price of any property in Ames, Iowa; including the inherited properties. 
-This will require the use of data analysis tools that allow the user to interact and amend variables in order to generate price predictions. 
-A machine learning Pipeline will also need to be deployed as a part of the 2nd business requirement.
+1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
+2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
 
 
