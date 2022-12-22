@@ -4,7 +4,6 @@ from src.data_management import load_house_data
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_style("whitegrid")
-from feature_engine.discretisation import ArbitraryDiscretiser
 import numpy as np
 import plotly.express as px
 
@@ -51,7 +50,8 @@ def p2_study ():
         f"variables. "
         f"* The 'SalePrice' was strongly correlated with 'OverallQual' and 'GrLivArea'. "
         f"These variables are a common factor in influencing property price in general. "
-        f"We explored this further by testing our hypothesis: "
+        f"In conclusion: \n\n"
+        f""
     )
 
 # Code copied from 'Sale_Price_study' notebook - Data visualisation section
@@ -79,8 +79,7 @@ def p2_study ():
 
 def plot_numerical(df, col, target_var):
     fig, axes = plt.subplots(figsize=(8, 5))
-    sns.histplot(data=df, x=col, y=target_var,
-                 kde=True, element="step")
+    sns.histplot(data=df, x=col, y=target_var)
     plt.title(f"{col}", fontsize=20, y=1.05)
     st.pyplot(fig)
 
