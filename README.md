@@ -147,9 +147,17 @@ Although your friend has an excellent understanding of property prices in her ow
 ## Unfixed Bugs
 * Inherited house dataset. 
 
-* Deployment fail 
+### Deployment fail 
+I had orginally successfully deployed the application to Via Heroku when I first started reating the dashboard. This was done in the hopes that there will be no issues further down the line when time is of the essence. However, it is sods law that a dpendency issue cropped up when I went to check the application via Heroku prior to submission. This happened when there was no tutor support available to help troubleshoot the problem. My mentor, Mo Shami spent a good 45 mins trying to help me with this, however we were unsuccesfull. 
 
-https://pip.pypa.io/en/stable/topics/dependency-resolution/ - dependency hell 
+![Herokuerror](media/deployissue.png)
+
+The issue really came down to the incompatbility between numpy version 1.18.5 and the other packages. I tried changing the version a few times but more compatibility issues with numpy kept cropping up. I tried version 1.20.0 and version 1.21.5 and I believe 1.21.0 also. I reverted back to the original 1.18.5 version of numpy as Heroku says the deployment has been successful but upon opening the app there is an error page stating "ModuleNotFoundError: No Module named 'numpy.random.bit_generator'. 
+
+![Herokuissue](media/deploymentheroku.png)
+
+Naturally I did my best to resolve this issue. I was very disappointed that it could not be resolved. This is something I will revisit again in the future, once permitted to ensure that the site is live. 
+
 
 
 
@@ -185,8 +193,11 @@ https://pip.pypa.io/en/stable/topics/dependency-resolution/ - dependency hell
 * Python 
 
 ## Refrences
-https://pythonguides.com/how-to-find-duplicates-in-python-dataframe/
-Checking for duplicated data  
+https://pythonguides.com/how-to-find-duplicates-in-python-dataframe/ - Checking for duplicated data  
+
+
+https://pip.pypa.io/en/stable/topics/dependency-resolution/ - 'Dependency hell', troubleshooting deployment issue. 
+https://stackoverflow.com/questions/72157517/error-resolutionimpossible-error-when-deploying-web-application-on-aws-beanstal- Trouble shhooting deployment issue. 
 
 ## Credits 
 
@@ -208,6 +219,3 @@ Checking for duplicated data
 * I would like to thank Neil McEwen of Code Institute for his patience and assitance with my many queries on slack
 
 
-
-# Bugs 
-I had a reoccuring issue where I had made extensive notes in markdown format, analysing the plots following feature engineering. The text and subsequent code kept on disapearing. I had to create a new gitpod workspace several times during this project to overcome this issue. 
