@@ -17,9 +17,9 @@ def p2_study ():
     df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
 
 
-    st.write("### House Price Study")
+    st.write("### Sale Price Correlation Study")
     st.info(
-        f"We will address the first busines requirement. \n\n"
+        f"We will address the **first busines requirement.** \n\n"
         f"* The client is interested in discovering the patterns from the dataset pertaining to house sales in Iowa. "
         f"This is so that she is aware of which variable are correlated and their sale price "
     )

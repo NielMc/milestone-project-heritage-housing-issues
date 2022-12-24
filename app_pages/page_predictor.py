@@ -38,7 +38,7 @@ def p5_widgets():
 
     st.write("---")
     st.write("Below we have the information the client requires regarding the sale price of "
-    "of the clients inherited houses")
+    "the clients inherited houses")
 
     in_df = load_inherited_house_data()
     filtered_df = in_df[['OverallQual', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'GarageArea']]

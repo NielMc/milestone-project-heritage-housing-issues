@@ -75,23 +75,38 @@ Although your friend has an excellent understanding of property prices in her ow
 
 - Hypothesis 1 - The larger the square footage of the property the higher the price 
         * By studying correlations between the size of the property (in square footage) and the sale value, we will be able to observe if this variable is a factor that influences price. 
+        - A correlation study will help with validating this. We will use relevant data visualisation tools here. 
+
 - Hypothesis 2 - The more recent the property build, the higher the property sale price/value (null hypothesis)
         * We will study data regarding the house build data and observe whether it correlates with a higher house value. 
+        - A correlation study will help with validating this. We will use relevant data visualisation tools here.
+
 - Hypothesis 3 - The better the overall quality of the property, the higher the price
         * We will check whether a property that has been rated as having a higher "overall quality" will also be higher in value 
+        - A correlation study will help with validating this. We will use relevant data visualisation tools here.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks
+* ### Business Requirement 1: Data Visualisation and Correlation Study 
+
+
+* ### Business Requirement 2: Regression Pipeline 
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course 
+* We want to build an ML Model that will predict the sale price of a house in Ames, Iowa. 
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+[Summary](media/p1.png)
+[Study](media/p2.png)
+[plot1](media/p2part1.png)
+[plot2](media/p2part2.png)
+[plot3](media/p2part3.png)
+[plot4](media/p2part4.png)
+[]()
+[]()
+[]()
 
 ## Epics
 * Information gathering and data collection.
