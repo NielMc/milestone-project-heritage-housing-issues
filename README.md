@@ -145,10 +145,14 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Unfixed Bugs
-* Inherited house dataset. 
+### Inherited house dataset
+
+![housedata](media/inheritedhouses.png)
+I had a bit of a struggle initially trying to link the kaggle dataset, however after much trouble shooting and with the help of Neil, I was able to pull through the dataset. I Checked the data and all seemed well. However when I developed the 'House Price Prediction' page of the dashboard, I found that the data being pulled through under the inherited houses file was infact a duplicate of the full dataset. After I had completed the rest of the dashboard, I tried to pull the kaggle dataset once again to correct this error, but then realsied that the steps would have to be repeated with the dataset. This would take sometime and there is a possibility of other issue cropping up and this was not a risk I wanted to take. 
+This is something I would definetly correct when time permits, however for nthe time being it seemed sensible to explain what had happened and that I understand what the error is and how it needs to be corrected in the future. 
 
 ### Deployment fail 
-I had orginally successfully deployed the application to Via Heroku when I first started reating the dashboard. This was done in the hopes that there will be no issues further down the line when time is of the essence. However, it is sods law that a dpendency issue cropped up when I went to check the application via Heroku prior to submission. This happened when there was no tutor support available to help troubleshoot the problem. My mentor, Mo Shami spent a good 45 mins trying to help me with this, however we were unsuccesfull. 
+I had orginally successfully deployed the application to via Heroku when I first started reating the dashboard. This was done in the hopes that there will be no issues further down the line when time is of the essence. However, it is sods law that a dpendency issue cropped up when I went to check the application via Heroku prior to submission. This happened when there was no tutor support available to help troubleshoot the problem. My mentor, Mo Shami spent a good 45 mins trying to help me with this, however we were unsuccesfull. 
 
 ![Herokuerror](media/deployissue.png)
 
