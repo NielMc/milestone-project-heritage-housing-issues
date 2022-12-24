@@ -75,14 +75,17 @@ Although your friend has an excellent understanding of property prices in her ow
 
 - Hypothesis 1 - The larger the square footage of the property the higher the price 
         * By studying correlations between the size of the property (in square footage) and the sale value, we will be able to observe if this variable is a factor that influences price. 
+
         - A correlation study will help with validating this. We will use relevant data visualisation tools here. 
 
 - Hypothesis 2 - The more recent the property build, the higher the property sale price/value (null hypothesis)
         * We will study data regarding the house build data and observe whether it correlates with a higher house value. 
+       
         - A correlation study will help with validating this. We will use relevant data visualisation tools here.
 
 - Hypothesis 3 - The better the overall quality of the property, the higher the price
         * We will check whether a property that has been rated as having a higher "overall quality" will also be higher in value 
+       
         - A correlation study will help with validating this. We will use relevant data visualisation tools here.
 
 
@@ -98,15 +101,16 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Dashboard Design
-[Summary](media/p1.png)
-[Study](media/p2.png)
-[plot1](media/p2part1.png)
-[plot2](media/p2part2.png)
-[plot3](media/p2part3.png)
-[plot4](media/p2part4.png)
-[]()
-[]()
-[]()
+![summary](media/p1.png)
+![study](media/p2.png)
+![plot1](media/p2part1.png)
+![plot2](media/p2part2.png)
+![plot3](media/p2part3.png)
+![plot4](media/p2part4.png)
+![predicthouse](media/p3.png)
+![hypothesis](media/p4.png)
+![mlpipe](media/p5.png)
+![mlpipe2](media/p5part2.png)
 
 ## Epics
 * Information gathering and data collection.
