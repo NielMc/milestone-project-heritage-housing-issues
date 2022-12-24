@@ -101,14 +101,33 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Dashboard Design
+
+### Page 1 
+### Project Summary 
+
 ![summary](media/p1.png)
+
+
+### Page 2
+### Sale Price Correlation Study 
 ![study](media/p2.png)
+
+### 
 ![plot1](media/p2part1.png)
 ![plot2](media/p2part2.png)
 ![plot3](media/p2part3.png)
 ![plot4](media/p2part4.png)
+
+### Page 3
+### Estimate House Price
 ![predicthouse](media/p3.png)
+
+### Page 4
+### Hypothesis
 ![hypothesis](media/p4.png)
+
+### Page 5
+### ML Pipeline
 ![mlpipe](media/p5.png)
 ![mlpipe2](media/p5part2.png)
 
@@ -126,7 +145,11 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+* Inherited house dataset. 
+
+* Deployment fail 
+
+
 
 ## Deployment
 ### Heroku
