@@ -149,6 +149,9 @@ Although your friend has an excellent understanding of property prices in her ow
 
 * Deployment fail 
 
+https://pip.pypa.io/en/stable/topics/dependency-resolution/ - dependency hell 
+
+
 
 
 ## Deployment
