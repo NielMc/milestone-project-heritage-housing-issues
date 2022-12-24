@@ -27,7 +27,8 @@ Predictive Analytics is something which has always interested me and I have been
 ---
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). 
-The user story where predictive analytics can be applied in a real project in the workplace. 
+We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
+
 * The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa; indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
@@ -78,10 +79,6 @@ Although your friend has an excellent understanding of property prices in her ow
         * We will study data regarding the house build data and observe whether it correlates with a higher house value. 
 - Hypothesis 3 - The better the overall quality of the property, the higher the price
         * We will check whether a property that has been rated as having a higher "overall quality" will also be higher in value 
-- Hypothesis 4 - The larger the square footage of the property and the higher the overall quality will result in a higher 
-        sale price compared with a smaller square footage property of a similar overall quality finish. 
-        * We look at data that examines the correlation between size and quality, and how it affects the properties sale price. 
-
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
