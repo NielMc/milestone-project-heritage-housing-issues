@@ -74,6 +74,7 @@ Although your friend has an excellent understanding of property prices in her ow
 
 * Information gathering and data collection.
 
+
 * Data visualization, cleaning, and preparation.
 
 * Model training, optimization and validation.
@@ -96,6 +97,7 @@ Although your friend has an excellent understanding of property prices in her ow
 - We want to build and train a regression model to predict the target variable which is the sale price. 
 - We will feature engineer our model and fit hyperparameteres to imporive its performance. 
 - We want to run regression evaluation to demonstrate the R2 Score and Mean Absolute Error.
+
 
 ## ML Business Case
 ###Regression Model - Unspervised - Uni-dimensional 
@@ -131,6 +133,16 @@ Although your friend has an excellent understanding of property prices in her ow
        
         - A correlation study will help with validating this. We will use relevant data visualisation tools here.
 
+## Data Cleaning 
+I used a spreadsheet to track how the data should be cleaned:
+
+![dataclean](media/datacleaningss.png)
+
+## Feature engineering 
+
+I used a spradsheet to track how the data should be feature engineered:
+
+![feature](media/featureengineerss.png)
 
 ## Dashboard Design
 
