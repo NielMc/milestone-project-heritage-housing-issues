@@ -1,6 +1,6 @@
 # Heritage Housing Issues
 
-This is my 5th and final project for the Code Institute "Full Stack Dveloper" Diploma. 
+This is my 5th and final project for the Code Institute "Full Stack Developer" Diploma. 
 Predictive Analytics is something which has always interested me and I have been very excited to reach this point in the course. I had longed to learn and practice these skills, as well as gain an understanding into a world which fascinates me. I present my [first ever dashboard,](https://heritagehouse.herokuapp.com/) but certainly not my last. 
 
 ![Head image](media/amiresponsive.png)
@@ -59,7 +59,6 @@ We then created a fictitious user story where predictive analytics can be applie
 |SalePrice|Sale Price|34900 - 755000|
 
 
-
 ## Business Requirements
 As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to help in maximising the sales price for the inherited properties.
 
@@ -69,11 +68,9 @@ Although your friend has an excellent understanding of property prices in her ow
 
 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
-
 ## User Stories
 
 * Information gathering and data collection.
-
 
 * Data visualization, cleaning, and preparation.
 
@@ -84,36 +81,34 @@ Although your friend has an excellent understanding of property prices in her ow
 * Dashboard deployment and release.
 
 
-
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 * ### Business Requirement 1: Data Visualisation and Correlation Study 
-- We will exlore and inspect the data related to the houses.
-- We will conduct a correlation study (Pearson and Spearman) to gain a better undertanding of house the variables are correlated with the 'SalePrice'.
+- We will explore and inspect the data related to the houses.
+- We will conduct a correlation study (Pearson and Spearman) to gain a better understanding of house the variables are correlated with the 'SalePrice'.
 - We will be using plots to measure the 'most strongly correlated' variables against Sale Price to visualize insights.
 - We will use the finding of these studies to validate the hypotheses.
 
 * ### Business Requirement 2: Regression Pipeline 
-- We want to predict the sale price of our clients 4 inherited homes and any other house in Ams, Iowa. 
+- We want to predict the sale price of our clients 4 inherited homes and any other house in Ames, Iowa. 
 - We want to build and train a regression model to predict the target variable which is the sale price. 
-- We will feature engineer our model and fit hyperparameteres to imporive its performance. 
+- We will feature engineer our model and fit hyperparameters to improve its performance. 
 - We want to run regression evaluation to demonstrate the R2 Score and Mean Absolute Error.
 
-
 ## ML Business Case
-###Regression Model - Unspervised - Uni-dimensional 
+### Regression Model - Unspervised - Uni-dimensional 
 
-- Provide client with well studied insights 
+- Provide client with well-studied insights 
 
 * We want to build an ML Model that will:
 1. Predict the sale price of a house in Ames, Iowa as the client has requested. 
-2. Estimate the 'SalePrice' of the clients 4 inherited properties. 
+2. Estimate the 'SalePrice' of the client’s 4 inherited properties. 
 - The target variable is the 'SalePrice' 
 
-* We will alse need to create a machine learning pipeline that will:
+* We will also need to create a machine learning pipeline that will:
 - Make prediction of house sale prices. 
 - We will be training this machine based on the most important features (variables). 
-- The R2 score of this model needs to be above 0.75 on both train and test set to be considered succesful. Anything short of this would be considered a failure. 
-- The predictions needs to remain consitent at over a long period of time (9-12 months) where the house value prediction is close to sale price 70% of the time. 
+- The R2 score of this model needs to be above 0.75 on both train and test set to be considered successful. Anything short of this would be considered a failure. 
+- The predictions need to remain consistent at over a long period of time (9-12 months) where the house value prediction is close to sale price 70% of the time. 
 - The output should remain as the 'SalePrice'. 
 
 ## Hypothesis and how to validate?
@@ -140,7 +135,7 @@ I used a spreadsheet to track how the data should be cleaned:
 
 ## Feature engineering 
 
-I used a spradsheet to track how the data should be feature engineered:
+I used a spreadsheet to track how the data should be feature engineered:
 
 ![feature](media/featureengineerss.png)
 
@@ -148,12 +143,11 @@ I used a spradsheet to track how the data should be feature engineered:
 
 ### Page 1 
 ### Project Summary 
-- Project 'Terms and Jargon'are outlined alongsode a story of how the project has come about. 
+- Project 'Terms and Jargon’ are outlined alongside a story of how the project has come about. 
 - Business Requirements are outlined. 
 - Project Dataset is broadly described as well as its source. 
 
 ![summary](media/p1.png)
-
 
 ### Page 2
 ### Sale Price Correlation Study 
@@ -188,7 +182,7 @@ This page answers business requirement 2:
 ### Page 4
 ### Hypothesis
 
-This page sets out the 3 statements that were hypothesized at the onset of the project. This page elaborate on the conclusions of the study of data in relation to the initial hypothesis and how they were validated. 
+This page sets out the 3 statements that were hypothesized at the onset of the project. This page elaborates on the conclusions of the study of data in relation to the initial hypothesis and how they were validated. 
 This page confirms all 3 hypotheses as being correct: 
 1. The larger the square footage of the property the higher the price
 2. The more recent the property build, the higher the property sale price/value
@@ -208,25 +202,23 @@ This page answers business requirement 2:
 ![mlpipe2](media/p5part2.png)
 
 
-
 ## Unfixed Bugs
 ### Inherited house dataset
 
 ![housedata](media/inheritedhouses.png)
-I had a bit of a struggle initially trying to link the kaggle dataset, however after much trouble shooting and with the help of Neil, I was able to pull through the dataset. I Checked the data and all seemed well. However when I developed the 'House Price Prediction' page of the dashboard, I found that the data being pulled through under the inherited houses file was infact a duplicate of the full dataset. After I had completed the rest of the dashboard, I tried to pull the kaggle dataset once again to correct this error, but then realsied that the steps would have to be repeated with the dataset. This would take sometime and there is a possibility of other issue cropping up and this was not a risk I wanted to take. 
-This is something I would definetly correct when time permits, however for nthe time being it seemed sensible to explain what had happened and that I understand what the error is and how it needs to be corrected in the future. 
+I had a bit of a struggle initially trying to link the Kaggle dataset, however after much trouble shooting and with the help of Neil, I was able to pull through the dataset. I Checked the data, and all seemed well. However, when I developed the 'House Price Prediction' page of the dashboard, I found that the data being pulled through under the inherited houses file was in fact a duplicate of the full dataset. After I had completed the rest of the dashboard, I tried to pull the Kaggle dataset once again to correct this error, but then realised that the steps would have to be repeated with the dataset. This would take some time and there is a possibility of other issue cropping up and this was not a risk I wanted to take. 
+This is something I would definitely correct when time permits, however for the time being it seemed sensible to explain what had happened and that I understand what the error is and how it needs to be corrected in the future. 
 
 ### Deployment fail 
-I had orginally successfully deployed the application to via Heroku when I first started reating the dashboard. This was done in the hopes that there will be no issues further down the line when time is of the essence. However, it is sods law that a dpendency issue cropped up when I went to check the application via Heroku prior to submission. This happened when there was no tutor support available to help troubleshoot the problem. My mentor, Mo Shami spent a good 45 mins trying to help me with this, however we were unsuccesfull. 
+I had originally successfully deployed the application to via Heroku when I first started creating the dashboard. This was done in the hopes that there will be no issues further down the line when time is of the essence. However, it is sods law that a dependency issue cropped up when I went to check the application via Heroku prior to submission. This happened when there was no tutor support available to help troubleshoot the problem. My mentor, Mo Shami spent a good 45 mins trying to help me with this, however we were unsuccessful. 
 
 ![Herokuerror](media/deployissue.png)
 
-The issue really came down to the incompatbility between numpy version 1.18.5 and the other packages. I tried changing the version a few times but more compatibility issues with numpy kept cropping up. I tried version 1.20.0 and version 1.21.5 and I believe 1.21.0 also. I reverted back to the original 1.18.5 version of numpy as Heroku says the deployment has been successful but upon opening the app there is an error page stating "ModuleNotFoundError: No Module named 'numpy.random.bit_generator'. 
+The issue really came down to the incompatibility between NumPy version 1.18.5 and the other packages. I tried changing the version a few times but more compatibility issues with NumPy kept cropping up. I tried version 1.20.0 and version 1.21.5 and I believe 1.21.0 also. I reverted back to the original 1.18.5 version of NumPy as Heroku says the deployment has been successful but upon opening the app there is an error page stating "ModuleNotFoundError: No Module named 'numpy.random.bit_generator'. 
 
 ![Herokuissue](media/deploymentheroku.png)
 
 Naturally I did my best to resolve this issue. I was very disappointed that it could not be resolved. This is something I will revisit again in the future, once permitted to ensure that the site is live. 
-
 
 
 ## Deployment
@@ -245,7 +237,6 @@ Naturally I did my best to resolve this issue. I was very disappointed that it c
 
 5. The deployment process should happen smoothly in case all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 
-
 ## Main Data Analysis and Machine Learning Libraries
 
 * [Streamlit](https://streamlit.io/)- Framework for creating dashboard.
@@ -253,10 +244,9 @@ Naturally I did my best to resolve this issue. I was very disappointed that it c
 * [Pandas](https://pandas.pydata.org/) - Data analysis, exploration and visualisation. 
 * [pandas_profiling](https://pypi.org/project/pandas-profiling/) - Display data in various formats
 * [Feature-engine](https://feature-engine.readthedocs.io/en/latest/) - Engineer pipeline 
-* [Scikit-Learn](https://scikit-learn.org/) - Create pipeline and apply algorithims. 
+* [Scikit-Learn](https://scikit-learn.org/) - Create pipeline and apply algorithms. 
 * [matplotlib](https://matplotlib.org/)- Create data visualisations such as plots. 
 * [seaborn](https://seaborn.pydata.org/index.html)- Plotting charts for displaying feature importance correlation 
-
 
 ## Technologies used 
 * [Github](https://github.com/) - Served as the remote repository
@@ -270,9 +260,8 @@ Naturally I did my best to resolve this issue. I was very disappointed that it c
 ## Refrences
 https://pythonguides.com/how-to-find-duplicates-in-python-dataframe/ - Checking for duplicated data  
 https://pip.pypa.io/en/stable/topics/dependency-resolution/ - 'Dependency hell', troubleshooting deployment issue. 
-https://stackoverflow.com/questions/72157517/error-resolutionimpossible-error-when-deploying-web-application-on-aws-beanstal- Trouble shhooting deployment issue. 
-https://discuss.streamlit.io/t/module-not-found-no-module-named-numpy-random-bit-generator/30713 - Troublehooting deployment issue
-
+https://stackoverflow.com/questions/72157517/error-resolutionimpossible-error-when-deploying-web-application-on-aws-beanstal- Trouble-shooting deployment issue. 
+https://discuss.streamlit.io/t/module-not-found-no-module-named-numpy-random-bit-generator/30713 - Trouble-shooting deployment issue
 
 ## Credits 
 
@@ -282,15 +271,13 @@ https://discuss.streamlit.io/t/module-not-found-no-module-named-numpy-random-bit
 * In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 * You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
-
 ### Content 
 - The template for this repository was provided by [Code Institute](www.codeinstitute.net). 
 - The dataset for this project is sourced from [Kaggle](www.kaggle.com)
 - The [template](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) for this project was provided by Code Institute. 
-- The custom functions or code which was taken from the Code Institue resources have been stated in the notebooks/app pages in markdown format or commented out. 
-
+- The custom functions or code which was taken from the Code Institute resources have been stated in the notebooks/app pages in markdown format or commented out. 
 
 ## Acknowledgements 
-* I would like to thank Neil McEwen of Code Institute for his patience and assitance with my many queries on slack
+* I would like to thank Neil McEwen of Code Institute for his patience and assistance with my many queries on slack
 * I would like to thank my mentor; Mo Shami for his guidance. 
-* Finaly a thank you to my husband for being patient, understanding and supportive throughout this project. 
+* Finally a thank you to my husband for being patient, understanding and supportive throughout this project. 
