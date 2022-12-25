@@ -24,7 +24,7 @@ def p4_hypothesis_and_validation():
     f" '1stflrSF', 'GarageArea' and 'TotalBmntSF' have greater square footage the sale prices generally tend "
     f" to be higher. This supports our first hypothesis. \n\n"
 
-    f" **Hypothesis 2** - The more recent the property build, the higher the property sale price/value "
+    f" **Hypothesis 2** - The more recent the property build, the higher the property sale price/value \n\n"
     f"  We studied data regarding the year houses were built and observed whether it correlates with a higher house value.\n\n"
     f" - Findings: **Correct** \n\n"
     f" - Explanation: Observing the histogram, it is clear to see a significant difference in the house price of more recently built. "

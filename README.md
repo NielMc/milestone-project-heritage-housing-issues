@@ -104,30 +104,62 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ### Page 1 
 ### Project Summary 
+- Project 'Terms and Jargon'are outlined alongsode a story of how the project has come about. 
+- Business Requirements are outlined. 
+- Project Dataset is broadly described as well as its source. 
 
 ![summary](media/p1.png)
 
 
 ### Page 2
 ### Sale Price Correlation Study 
+
+- This page answers business requirement 1: 
+
 ![study](media/p2.png)
 
-### 
+- The data set is available in the first instance to have a quick look over. 
+- This page contains boxes which can be ticked using the mouse to reveal more data. This has been done to keep the outputs of the Sale_Price_study notebook contained until they need to be viewed.
+
 ![plot1](media/p2part1.png)
+
+- The next 2 images show 5 plots that illustrate the data distribution to enable the visualisation to be easier for the client. 
+- The plots show the 5 most important features of all the variables and how the correlate with the 'SalePrice' which is the 'Target Variable'. 
 ![plot2](media/p2part2.png)
 ![plot3](media/p2part3.png)
+
+- Pearson Correlation, Spearman Correlation and Predictive Power Score show how the variables interact against one another and which variables correlate more positively with one another, as compared to other variables. This is all a part of providing useful insight to the client using data visualisation tools. 
 ![plot4](media/p2part4.png)
 
 ### Page 3
 ### Estimate House Price
+This page answers business requirement 2:
+
+- A house price estimator is present for the dashboard user to amend the figures accordingly and thus generate house price estimations. 
+- The 5 widgets available to toggle the data for the 5 variables regarded as most highly correlated to effect house price. 
+- House data is available to see, this was supposed to be of the 4 inherited houses only but as I have described in the bug section of the README file, the entire data set file is being pulled instead. Below this is the breakdown of the value of the client’s 4 inherited houses. 
+
 ![predicthouse](media/p3.png)
 
 ### Page 4
 ### Hypothesis
+
+This page sets out the 3 statements that were hypothesized at the onset of the project. This page elaborate on the conclusions of the study of data in relation to the initial hypothesis and how they were validated. 
+This page confirms all 3 hypotheses as being correct: 
+1. The larger the square footage of the property the higher the price
+2. The more recent the property build, the higher the property sale price/value
+3. The better the overall quality of the property, the higher the price
+
 ![hypothesis](media/p4.png)
 
 ### Page 5
 ### ML Pipeline
+This page answers business requirement 2: 
+- Informative conclusion at the top of the page to give the reader a quick insight about what outcome of the steps listed below. 
+- ML Pipeline in one place for the reader to understand the steps that were taken. 
+- Feature Importance graph that illustrates which features rank as most important and how they stack up next to each other too. 
+- Pipeline Performance is presented with various statistics pertaining to the performance of the pipeline, including the R2 Score. 
+
 ![mlpipe](media/p5.png)
 ![mlpipe2](media/p5part2.png)
 
