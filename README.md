@@ -68,17 +68,81 @@ Although your friend has an excellent understanding of property prices in her ow
 
 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
+
 ## User Stories
+I will use the following shorthand within the user stories to link each user story back to the business requirements:
+BR1 - Business Requirement 1 
+BR2 = Business Requirement 2 
 
 * Information gathering and data collection.
 
+**As a Data Practitioner** I want to have access to the correct data so that I can conduct the analysis and execute a ML Pipeline. 
+How: This will be done by fetching data from Kaggle using an API key. 
+Satisfied: Data connected using Kaggle API
+**BR1 AND BR2** - Data collection and cleaning notebook 
+
 * Data visualization, cleaning, and preparation.
+**As a data Practioner** I want to have clean data so that I can work more effectively at providing more accurate information to the User. 
+How: Use data cleaning methods on data. 
+Satisfied: Use Arbitrary Imputer, Categorical Variable Imputer and Mean Median Imputer. 
+**BR1 and BR2** - Data cleaning and feature engineering notebook 
+
+**As a data Practioner** I want to use only data that is relevant so that I am creating a more effective model and more accurate outputs of information.  
+How: Use feature engineering methods on data. 
+Satisfied: Use Numerical transformers, Power, Yeo Johnson and smart Correlation. 
+**BR1 and BR2** - Feature engineering notebook 
+
+**As a data Practioner** I want to be able to present the data visually so that the User is able to understand the data better.
+How: plots and graphs that present the data. 
+Satisfied: Seaborn plots, Pearson and Spearman correlation studies as well as PPS correlation study. 
+**BR1** - Sale price study notebook and Study app 
+
+**As a User/Client** I want to be able to see visualisations of the data so that it is easier for me to understand it. 
+How: Present plots and graphs on the Study page on the dashboard. 
+Satisfied: Seaborn plots, Pearson and Spearman correlation studies as well as PPS correlation study. 
+**BR1** - Study app 
+
 
 * Model training, optimization and validation.
 
+**As a User/Client** I want to predict/estimate the sale price of any house in Ames, Iowa so that I can improve my knowledge of the housing market of the area. 
+How: Create ML pipeline that targets the Sale price 
+Satisfied: Create House price prediction tool and ML Pipeline 
+**BR2** - ML predict app and predictor app
+
+**As a User/Client** I want to predict/estimate the sale price of the houses I have inherited so that I can make decisions favourably regarding their value.
+How: Create ML pipeline that targets the Sale price. 
+Satisfied: Create House price prediction tool and ML Pipeline 
+**BR2** - ML predict app and predictor app
+
 * Dashboard planning, designing, and development.
 
+**As a client** I want run sale price predictions using attributes for any Ames, Iowa property so that I can predict the sale price of a property I may wish to purchase in the future
+How: Create a tool that has widgets that can be interacted with by the user to manipulate the output. Must be linked to the ML pipeline to make reliable predictions
+Satisfied: House price prediction tool on dashboard
+**BR2** - Predictor app 
+
+**As a User/Client** I want to know the hypotheses and how they were validated so that I can understand the data better.
+Action Required: Make the hypothesis publicly available on the dashboard
+Satisfied: Create a 'Project Hypothesis' page in the app 
+**BR1** - Hypothesis app 
+
+**As a User/Client** I want to easily navigate through a dashboard so that I can intuitively find the information that I am looking for
+How: Create a simple that is easy to navigate and understand 
+Satisfied: Streamlit dashboard with a ever-present menu on the side
+**BR1 and BR2** Summary, sale price study, predictor, hypotheses and ML predict apps. 
+
 * Dashboard deployment and release.
+**As a client** I want a live site so that I can access the house price estimator and view the ML pipeline so that I can make decisions regarding my houses. 
+Action Required: Deploy site on Heroku
+Satisfied: Having access to a deployed Dashboard. 
+**BR1 & BR2** 
+
+**As a data practioner** I want a live site on which to host the project so that the pipeline can be updated as and when improvements are made. 
+Action Required: Redeploy to Heroku when updates are made. 
+Satisfied: By creating and deploying the dashboard to Heroku.
+**BR2**
+
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
