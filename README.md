@@ -86,14 +86,33 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 * ### Business Requirement 1: Data Visualisation and Correlation Study 
-
+- We will exlore and inspect the data related to the houses.
+- We will conduct a correlation study (Pearson and Spearman) to gain a better undertanding of house the variables are correlated with the 'SalePrice'.
+- We will be using plots to measure the 'most strongly correlated' variables against Sale Price to visualize insights.
+- We will use the finding of these studies to validate the hypotheses.
 
 * ### Business Requirement 2: Regression Pipeline 
-
+- We want to predict the sale price of our clients 4 inherited homes and any other house in Ams, Iowa. 
+- We want to build and train a regression model to predict the target variable which is the sale price. 
+- We will feature engineer our model and fit hyperparameteres to imporive its performance. 
+- We want to run regression evaluation to demonstrate the R2 Score and Mean Absolute Error.
 
 ## ML Business Case
-* We want to build an ML Model that will predict the sale price of a house in Ames, Iowa. 
+###Regression Model - Unspervised - Uni-dimensional 
 
+- Provide client with well studied insights 
+
+* We want to build an ML Model that will:
+1. Predict the sale price of a house in Ames, Iowa as the client has requested. 
+2. Estimate the 'SalePrice' of the clients 4 inherited properties. 
+- The target variable is the 'SalePrice' 
+
+* We will alse need to create a machine learning pipeline that will:
+- Make prediction of house sale prices. 
+- We will be training this machine based on the most important features (variables). 
+- The R2 score of this model needs to be above 0.75 on both train and test set to be considered succesful. Anything short of this would be considered a failure. 
+- The predictions needs to remain consitent at over a long period of time (9-12 months) where the house value prediction is close to sale price 70% of the time. 
+- The output should remain as the 'SalePrice'. 
 
 ## Hypothesis and how to validate?
 
@@ -175,8 +194,6 @@ This page answers business requirement 2:
 
 ![mlpipe](media/p5.png)
 ![mlpipe2](media/p5part2.png)
-
-
 
 
 
