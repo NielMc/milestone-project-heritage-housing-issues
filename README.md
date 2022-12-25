@@ -74,14 +74,18 @@ I will use the following shorthand within the user stories to link each user sto
 BR1 - Business Requirement 1 
 BR2 = Business Requirement 2 
 
-* Information gathering and data collection.
+* **Information gathering and data collection**
 
 **As a Data Practitioner** I want to have access to the correct data so that I can conduct the analysis and execute a ML Pipeline. 
+
 How: This will be done by fetching data from Kaggle using an API key. 
+
 Satisfied: Data connected using Kaggle API
+
 **BR1 AND BR2** - Data collection and cleaning notebook 
 
-* Data visualization, cleaning, and preparation.
+
+* **Data visualization, cleaning, and preparation**
 **As a data Practioner** I want to have clean data so that I can work more effectively at providing more accurate information to the User. 
 How: Use data cleaning methods on data. 
 Satisfied: Use Arbitrary Imputer, Categorical Variable Imputer and Mean Median Imputer. 
@@ -103,7 +107,7 @@ Satisfied: Seaborn plots, Pearson and Spearman correlation studies as well as PP
 **BR1** - Study app 
 
 
-* Model training, optimization and validation.
+* **Model training, optimization and validation**
 
 **As a User/Client** I want to predict/estimate the sale price of any house in Ames, Iowa so that I can improve my knowledge of the housing market of the area. 
 How: Create ML pipeline that targets the Sale price 
@@ -115,7 +119,7 @@ How: Create ML pipeline that targets the Sale price.
 Satisfied: Create House price prediction tool and ML Pipeline 
 **BR2** - ML predict app and predictor app
 
-* Dashboard planning, designing, and development.
+* **Dashboard planning, designing, and development**
 
 **As a client** I want run sale price predictions using attributes for any Ames, Iowa property so that I can predict the sale price of a property I may wish to purchase in the future
 How: Create a tool that has widgets that can be interacted with by the user to manipulate the output. Must be linked to the ML pipeline to make reliable predictions
@@ -132,7 +136,7 @@ How: Create a simple that is easy to navigate and understand
 Satisfied: Streamlit dashboard with a ever-present menu on the side
 **BR1 and BR2** Summary, sale price study, predictor, hypotheses and ML predict apps. 
 
-* Dashboard deployment and release.
+* **Dashboard deployment and release**
 **As a client** I want a live site so that I can access the house price estimator and view the ML pipeline so that I can make decisions regarding my houses. 
 Action Required: Deploy site on Heroku
 Satisfied: Having access to a deployed Dashboard. 
