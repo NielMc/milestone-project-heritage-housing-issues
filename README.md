@@ -13,9 +13,9 @@ Predictive Analytics is something which has always interested me and I have been
 * [Dataset Content](#dataset-content)
 * [Business Requirements](#business-requirements)
 * [User Stories](#user-stories)
-* [Hypothesis and how to validate?](#hypothesis-and-how-to-validate?)
 * [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks) 
 * [ML Business Case](#ml-business-case)
+* [Hypothesis and how to validate?](#hypothesis-and-how-to-validate?)
 * [Dashboard Design](#dashboard-design)
 * [Bugs](#bugs)
 * [Deployment](#deployment)  
@@ -70,6 +70,30 @@ Although your friend has an excellent understanding of property prices in her ow
 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
 
+## User Stories
+
+* Information gathering and data collection.
+
+* Data visualization, cleaning, and preparation.
+
+* Model training, optimization and validation.
+
+* Dashboard planning, designing, and development.
+
+* Dashboard deployment and release.
+
+
+
+## The rationale to map the business requirements to the Data Visualisations and ML tasks
+* ### Business Requirement 1: Data Visualisation and Correlation Study 
+
+
+* ### Business Requirement 2: Regression Pipeline 
+
+
+## ML Business Case
+* We want to build an ML Model that will predict the sale price of a house in Ames, Iowa. 
+
 
 ## Hypothesis and how to validate?
 
@@ -87,17 +111,6 @@ Although your friend has an excellent understanding of property prices in her ow
         * We will check whether a property that has been rated as having a higher "overall quality" will also be higher in value 
        
         - A correlation study will help with validating this. We will use relevant data visualisation tools here.
-
-
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* ### Business Requirement 1: Data Visualisation and Correlation Study 
-
-
-* ### Business Requirement 2: Regression Pipeline 
-
-
-## ML Business Case
-* We want to build an ML Model that will predict the sale price of a house in Ames, Iowa. 
 
 
 ## Dashboard Design
@@ -163,16 +176,7 @@ This page answers business requirement 2:
 ![mlpipe](media/p5.png)
 ![mlpipe2](media/p5part2.png)
 
-## Epics
-* Information gathering and data collection.
 
-* Data visualization, cleaning, and preparation.
-
-* Model training, optimization and validation.
-
-* Dashboard planning, designing, and development.
-
-* Dashboard deployment and release.
 
 
 
@@ -196,8 +200,6 @@ Naturally I did my best to resolve this issue. I was very disappointed that it c
 
 
 
-
-
 ## Deployment
 ### Heroku
 
@@ -216,24 +218,32 @@ Naturally I did my best to resolve this issue. I was very disappointed that it c
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
+
+* [Streamlit](https://streamlit.io/)- Framework for creating dashboard.
+* [Numpy](https://numpy.org/) - Process arrays to store values 
+* [Pandas](https://pandas.pydata.org/) - Data analysis, exploration and visualisation. 
+* [pandas_profiling](https://pypi.org/project/pandas-profiling/) - Display data in various formats
+* [Feature-engine](https://feature-engine.readthedocs.io/en/latest/) - Engineer pipeline 
+* [Scikit-Learn](https://scikit-learn.org/) - Create pipeline and apply algorithims. 
+* [matplotlib](https://matplotlib.org/)- Create data visualisations such as plots. 
+* [seaborn](https://seaborn.pydata.org/index.html)- Plotting charts for displaying feature importance correlation 
 
 
 ## Technologies used 
-* Github - 
-* Gitpod - Used as a local workspace 
-* Streamlit - To develop and display dashboard
-* Heroku - 
+* [Github](https://github.com/) - Served as the remote repository
+* [Gitpod](https://gitpod.io) - Served as the local repository and IDE.
+* [Streamlit](https://docs.streamlit.io/) - To develop and display dashboard
+* [Heroku](https://id.heroku.com/) - Site deployed to heroku 
 
 ## Languages used
-* Python 
+* [Python](https://www.python.org) 
 
 ## Refrences
 https://pythonguides.com/how-to-find-duplicates-in-python-dataframe/ - Checking for duplicated data  
-
-
 https://pip.pypa.io/en/stable/topics/dependency-resolution/ - 'Dependency hell', troubleshooting deployment issue. 
 https://stackoverflow.com/questions/72157517/error-resolutionimpossible-error-when-deploying-web-application-on-aws-beanstal- Trouble shhooting deployment issue. 
+https://discuss.streamlit.io/t/module-not-found-no-module-named-numpy-random-bit-generator/30713 - Troublehooting deployment issue
+
 
 ## Credits 
 
@@ -243,15 +253,15 @@ https://stackoverflow.com/questions/72157517/error-resolutionimpossible-error-wh
 * In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 * You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
+
 ### Content 
+- The template for this repository was provided by [Code Institute](www.codeinstitute.net). 
+- The dataset for this project is sourced from [Kaggle](www.kaggle.com)
+- The [template](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) for this project was provided by Code Institute. 
+- The custom functions or code which was taken from the Code Institue resources have been stated in the notebooks/app pages in markdown format or commented out. 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
-
-
-## Acknowledgements (optional)
+## Acknowledgements 
 * I would like to thank Neil McEwen of Code Institute for his patience and assitance with my many queries on slack
-
-
+* I would like to thank my mentor; Mo Shami for his guidance. 
+* Finaly a thank you to my husband for being patient, understanding and supportive throughout this project. 
