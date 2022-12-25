@@ -59,6 +59,9 @@ We then created a fictitious user story where predictive analytics can be applie
 |SalePrice|Sale Price|34900 - 755000|
 
 
+---
+
+
 ## Business Requirements
 As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to help in maximising the sales price for the inherited properties.
 
@@ -77,76 +80,75 @@ BR2 = Business Requirement 2
 * **Information gathering and data collection**
 
 **As a Data Practitioner** I want to have access to the correct data so that I can conduct the analysis and execute a ML Pipeline. 
-
-How: This will be done by fetching data from Kaggle using an API key. 
-
-Satisfied: Data connected using Kaggle API
-
+- How: This will be done by fetching data from Kaggle using an API key. 
+- Satisfied: Data connected using Kaggle API
 **BR1 AND BR2** - Data collection and cleaning notebook 
 
 
 * **Data visualization, cleaning, and preparation**
+
 **As a data Practioner** I want to have clean data so that I can work more effectively at providing more accurate information to the User. 
-How: Use data cleaning methods on data. 
-Satisfied: Use Arbitrary Imputer, Categorical Variable Imputer and Mean Median Imputer. 
+- How: Use data cleaning methods on data. 
+- Satisfied: Use Arbitrary Imputer, Categorical Variable Imputer and Mean Median Imputer. 
 **BR1 and BR2** - Data cleaning and feature engineering notebook 
 
 **As a data Practioner** I want to use only data that is relevant so that I am creating a more effective model and more accurate outputs of information.  
-How: Use feature engineering methods on data. 
-Satisfied: Use Numerical transformers, Power, Yeo Johnson and smart Correlation. 
+- How: Use feature engineering methods on data. 
+- Satisfied: Use Numerical transformers, Power, Yeo Johnson and smart Correlation. 
 **BR1 and BR2** - Feature engineering notebook 
 
 **As a data Practioner** I want to be able to present the data visually so that the User is able to understand the data better.
-How: plots and graphs that present the data. 
-Satisfied: Seaborn plots, Pearson and Spearman correlation studies as well as PPS correlation study. 
+- How: plots and graphs that present the data. 
+- Satisfied: Seaborn plots, Pearson and Spearman correlation studies as well as PPS correlation study. 
 **BR1** - Sale price study notebook and Study app 
 
 **As a User/Client** I want to be able to see visualisations of the data so that it is easier for me to understand it. 
-How: Present plots and graphs on the Study page on the dashboard. 
-Satisfied: Seaborn plots, Pearson and Spearman correlation studies as well as PPS correlation study. 
+- How: Present plots and graphs on the Study page on the dashboard. 
+- Satisfied: Seaborn plots, Pearson and Spearman correlation studies as well as PPS correlation study. 
 **BR1** - Study app 
 
 
 * **Model training, optimization and validation**
 
 **As a User/Client** I want to predict/estimate the sale price of any house in Ames, Iowa so that I can improve my knowledge of the housing market of the area. 
-How: Create ML pipeline that targets the Sale price 
-Satisfied: Create House price prediction tool and ML Pipeline 
+- How: Create ML pipeline that targets the Sale price 
+- Satisfied: Create House price prediction tool and ML Pipeline 
 **BR2** - ML predict app and predictor app
 
 **As a User/Client** I want to predict/estimate the sale price of the houses I have inherited so that I can make decisions favourably regarding their value.
-How: Create ML pipeline that targets the Sale price. 
-Satisfied: Create House price prediction tool and ML Pipeline 
+- How: Create ML pipeline that targets the Sale price. 
+- Satisfied: Create House price prediction tool and ML Pipeline 
 **BR2** - ML predict app and predictor app
 
 * **Dashboard planning, designing, and development**
 
 **As a client** I want run sale price predictions using attributes for any Ames, Iowa property so that I can predict the sale price of a property I may wish to purchase in the future
-How: Create a tool that has widgets that can be interacted with by the user to manipulate the output. Must be linked to the ML pipeline to make reliable predictions
-Satisfied: House price prediction tool on dashboard
+- How: Create a tool that has widgets that can be interacted with by the user to manipulate the output. Must be linked to the ML pipeline to make reliable predictions
+- Satisfied: House price prediction tool on dashboard
 **BR2** - Predictor app 
 
 **As a User/Client** I want to know the hypotheses and how they were validated so that I can understand the data better.
-Action Required: Make the hypothesis publicly available on the dashboard
-Satisfied: Create a 'Project Hypothesis' page in the app 
+- Action Required: Make the hypothesis publicly available on the dashboard
+- Satisfied: Create a 'Project Hypothesis' page in the app 
 **BR1** - Hypothesis app 
 
 **As a User/Client** I want to easily navigate through a dashboard so that I can intuitively find the information that I am looking for
-How: Create a simple that is easy to navigate and understand 
-Satisfied: Streamlit dashboard with a ever-present menu on the side
+- How: Create a simple that is easy to navigate and understand 
+- Satisfied: Streamlit dashboard with a ever-present menu on the side
 **BR1 and BR2** Summary, sale price study, predictor, hypotheses and ML predict apps. 
 
 * **Dashboard deployment and release**
 **As a client** I want a live site so that I can access the house price estimator and view the ML pipeline so that I can make decisions regarding my houses. 
-Action Required: Deploy site on Heroku
-Satisfied: Having access to a deployed Dashboard. 
+- Action Required: Deploy site on Heroku
+- Satisfied: Having access to a deployed Dashboard. 
 **BR1 & BR2** 
 
 **As a data practioner** I want a live site on which to host the project so that the pipeline can be updated as and when improvements are made. 
-Action Required: Redeploy to Heroku when updates are made. 
-Satisfied: By creating and deploying the dashboard to Heroku.
+- Action Required: Redeploy to Heroku when updates are made. 
+- Satisfied: By creating and deploying the dashboard to Heroku.
 **BR2**
 
+---
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
@@ -179,6 +181,10 @@ Satisfied: By creating and deploying the dashboard to Heroku.
 - The predictions need to remain consistent at over a long period of time (9-12 months) where the house value prediction is close to sale price 70% of the time. 
 - The output should remain as the 'SalePrice'. 
 
+
+---
+
+
 ## Hypothesis and how to validate?
 
 - Hypothesis 1 - The larger the square footage of the property the higher the price 
@@ -196,6 +202,9 @@ Satisfied: By creating and deploying the dashboard to Heroku.
        
         - A correlation study will help with validating this. We will use relevant data visualisation tools here.
 
+---
+
+
 ## Data Cleaning 
 I used a spreadsheet to track how the data should be cleaned:
 
@@ -206,6 +215,10 @@ I used a spreadsheet to track how the data should be cleaned:
 I used a spreadsheet to track how the data should be feature engineered:
 
 ![feature](media/featureengineerss.png)
+
+
+---
+
 
 ## Dashboard Design
 
@@ -270,6 +283,9 @@ This page answers business requirement 2:
 ![mlpipe2](media/p5part2.png)
 
 
+---
+
+
 ## Unfixed Bugs
 ### Inherited house dataset
 
@@ -287,6 +303,9 @@ The issue really came down to the incompatibility between NumPy version 1.18.5 a
 ![Herokuissue](media/deploymentheroku.png)
 
 Naturally I did my best to resolve this issue. I was very disappointed that it could not be resolved. This is something I will revisit again in the future, once permitted to ensure that the site is live. 
+
+
+---
 
 
 ## Deployment
@@ -331,19 +350,14 @@ https://pip.pypa.io/en/stable/topics/dependency-resolution/ - 'Dependency hell',
 https://stackoverflow.com/questions/72157517/error-resolutionimpossible-error-when-deploying-web-application-on-aws-beanstal- Trouble-shooting deployment issue. 
 https://discuss.streamlit.io/t/module-not-found-no-module-named-numpy-random-bit-generator/30713 - Trouble-shooting deployment issue
 
-## Credits 
 
-- Kaggle - dataset on which the study was based
-- Code Institute - for the learning materials and template for the project
-- 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
-### Content 
+### Content and Credits
 - The template for this repository was provided by [Code Institute](www.codeinstitute.net). 
 - The dataset for this project is sourced from [Kaggle](www.kaggle.com)
 - The [template](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) for this project was provided by Code Institute. 
 - The custom functions or code which was taken from the Code Institute resources have been stated in the notebooks/app pages in markdown format or commented out. 
+
 
 ## Acknowledgements 
 * I would like to thank Neil McEwen of Code Institute for his patience and assistance with my many queries on slack
