@@ -14,7 +14,7 @@ def p2_study ():
 
     vars_to_study = ['OverallQual', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'GarageArea']
 
-    df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
+    df_corr_pearson, df_corr_spearman = CalculateCorrAndPPS(df)
 
 
     st.write("### Sale Price Correlation Study")
@@ -70,9 +70,7 @@ def p2_study ():
         heatmap_corr(df=df_corr_spearman, threshold=0.4,
                      figsize=(20, 12), font_annot=12)
 
-    if st.checkbox("Predictive Power Score"):
-        heatmap_pps(df=pps_matrix, threshold=0.2,
-                    figsize=(20, 12), font_annot=12)
+
 
 
 # Copied from Data_cleaning notebook - correlation and pps analysis 
@@ -124,10 +122,9 @@ def heatmap_pps(df,threshold, figsize=(20,12), font_annot = 8):
 def CalculateCorrAndPPS(df):
     df_corr_spearman = df.corr(method="spearman")
     df_corr_pearson = df.corr(method="pearson")
-    pps_matrix_raw = pps.matrix(df)
-    pps_matrix = pps_matrix_raw.filter(['x', 'y', 'ppscore']).pivot(columns='x', index='y', values='ppscore')
 
-    return df_corr_pearson, df_corr_spearman, pps_matrix
+
+    return df_corr_pearson, df_corr_spearman
 
   
 
