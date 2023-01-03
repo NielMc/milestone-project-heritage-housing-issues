@@ -1,5 +1,4 @@
 import streamlit as st
-import ppscore as pps
 from src.data_management import load_house_data
 import matplotlib.pyplot as plt
 import seaborn as sns
